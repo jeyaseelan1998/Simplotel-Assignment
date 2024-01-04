@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.section-1 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    background-color: #ff7171;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items {
+    width: 80%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #000;
+    font-family: "GeorgiaPro";
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-link {
+        font-size: 18px;
+    }
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid black;
+}
+
+.menu-bar-btn {
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.menu-bar-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.banner-section-a {
+    flex: 1;
+    display: flex;
+}
+
+.content-container {
+    flex: 1;
+    background-color: blue;
+    background-image: linear-gradient(to right, #fff4b0, #ffd2d1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-heading {
+    width: 80%;
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-family: "TTNormsPro";
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.paragraph {
+    font-family: "TTNormsPro";
+    font-size: 18px;
+    font-weight: lighter;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.click-me-btn {
+    font-family: "TTNormsPro";
+    font-size: 12px;
+    font-weight: lighter;
+    align-self: flex-start;
+    width: 180px;
+    height: 40px;
+    background-color: #ff7171;
+    color: #fff;
+    margin-left: 10%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .click-me-btn {
+        width: 120px;
+        height: 35px;
+    }
+}
+
+.burger-bg-container {
+    flex: 1;
+    background-image: url('./asserts/pexels-robin-stickel-70497.jpg');
+    background-size: cover;
+}
+
+.banner-section-b {
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #fff6ae, #ffabf7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.images-container div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.left-image {
+    width: 180px;
+    height: 180px;
+}
+
+.left-image:first-child {
+    margin-bottom: 15PX;
+}
+
+.right-image {
+    width: 180px;
+}
+
+@media screen and (max-width: 768px) {
+    .left-image {
+        height: 120px;
+    }
+
+    .left-image:first-child {
+        margin-bottom: 8PX;
+    }
+
+    .images-container div {
+        margin-right: 15px;
+    }
+
+    .right-image,
+    .left-image {
+        width: 120px;
+    }
+}
+
+.details-container {
+    flex: 1;
+    margin-left: 35px;
+}
+
+.details {
+    background-color: #ff7171;
+    width: 80%;
+    padding: 16px;
+}
+
+.details p {
+    font-size: 14px;
+    font-family: "TTNormsPro";
+
+}
+
+.details h1 {
+    font-size: 35px;
+    margin: 25px 0;
+    font-family: "TTNormsPro";
+
+}
+
+@media screen and (max-width: 768px) {
+    .details h1 {
+        font-size: 25px;
+        margin: 15px 0;
+    }
+
+    .details p {
+        font-size: 12px;
+    }
+
+    .details {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .details h1 {
+        font-size: 15px;
+
+    }
+
+    .left-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .right-image {
+        width: 90px;
+    }
+}
+
+.details a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    margin-left: 15px;
+    width: 18px;
+}
