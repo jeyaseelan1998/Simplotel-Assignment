@@ -75,6 +75,12 @@
     display: flex;
 }
 
+@media screen and (max-width: 576px) {
+    .banner-section-a {
+        flex-direction: column;
+    }
+}
+
 .content-container {
     flex: 1;
     background-color: blue;
@@ -134,6 +140,7 @@
     .click-me-btn {
         width: 120px;
         height: 35px;
+        margin-bottom: 25px;
     }
 }
 
@@ -141,6 +148,12 @@
     flex: 1;
     background-image: url('./asserts/pexels-robin-stickel-70497.jpg');
     background-size: cover;
+}
+
+@media screen and (max-width: 576px) {
+    .burger-bg-container {
+        min-height: 250px;
+    }
 }
 
 .banner-section-b {
@@ -151,11 +164,20 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 576px) {
+    .banner-section-b {
+        flex-direction: column;
+        align-items: center;
+        min-height: fit-content;
+    }
+}
+
 .images-container {
     flex: 1;
     display: flex;
     justify-content: flex-end;
 }
+
 
 .images-container div {
     display: flex;
@@ -195,15 +217,35 @@
     }
 }
 
+@media screen and (max-width: 576px) {
+    .images-container {
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+}
+
 .details-container {
     flex: 1;
     margin-left: 35px;
+}
+
+@media screen and (max-width: 576px) {
+    .details-container {
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
 }
 
 .details {
     background-color: #ff7171;
     width: 80%;
     padding: 16px;
+}
+
+@media screen and (max-width: 576px) {
+    .details {
+        width: 100%;
+    }
 }
 
 .details p {
